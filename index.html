@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quotes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mt-48 flex flex-col gap-8 justify-center items-center">
+    <header>
+      <h1 class="text-5xl font-bold">Famous Quotes~</h1>
+    </header>
+    <main
+      class="bg-black h-96 w-96 flex flex-col justify-center items-center rounded-lg border-rose-300 border-8"
+    >
+      <section
+        class="bg-blue-300 h-[90%] w-[90%] rounded-lg flex justify-center items-center"
+      >
+        <div>
+          <blockquote id="display-quote">Hello</blockquote>
+        </div>
+      </section>
+      <div class="rating gap-1">
+        <input type="radio" name="rating-3" class="mask mask-heart bg-red-400" />
+        <input type="radio" name="rating-3" class="mask mask-heart bg-orange-400" checked />
+      </div>
+    </main>
+    <footer>
+      <button onclick="loadQuotes()" class="btn btn-warning btn-outline">Next</button>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
